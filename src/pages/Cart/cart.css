@@ -1,0 +1,151 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313;
+  padding: 50px 0;
+}
+
+.cartItem {
+  width: 700px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  margin: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.cartItem:hover {
+  transform: translateY(-10px);
+}
+
+.cartItem img {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+
+.cartItem:hover img {
+  transform: scale(1.2);
+}
+
+.cartItem .description {
+  width: 100%;
+  font-size: 32px;
+  margin: 0 50px;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.countHandler input {
+  width: 40px;
+  text-align: center;
+  font-weight: bolder;
+  margin: 0 10px;
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+}
+.checkout p{
+  font-size: 30px;
+    margin: 20px;
+    color: #1f1fff;
+}
+.checkout button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 150px;
+  height: 50px;
+  background-color: #1f1fff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.checkout button:hover {
+  background-color: #00ffbf;
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+
+
+/* Media Query */
+/* Styles for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+  .cartItem {
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+  }
+  
+  .cartItem img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .cartItem .description {
+    font-size: 24px;
+    margin: 0 20px;
+  }
+  
+  .checkout p {
+    font-size: 24px;
+  }
+  
+  .checkout button {
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+/* Styles for screens with a minimum width of 1200px */
+@media screen and (min-width: 1200px) {
+  .cartItem {
+    width: 900px;
+    height: 300px;
+    margin: 50px;
+  }
+  
+  .cartItem img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .cartItem .description {
+    font-size: 48px;
+    margin: 0 100px;
+  }
+  
+  .checkout p {
+    font-size: 36px;
+  }
+  
+  .checkout button {
+    width: 200px;
+    height: 60px;
+    font-size: 24px;
+  }
+}
+

@@ -1,0 +1,26 @@
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: black; /* Change the background color to black */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: 2px solid rgb(37, 212, 255); /* Add a border to the bottom of the navbar */
+  }
+  
+  .links {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: rgb(37, 212, 255); /* Change the link color to a neon blue */
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold; /* Add bold text to the links */
+    text-transform: uppercase; /* Convert the text to uppercase */
+    letter-spacing: 1px; /* Increase the spacing between the letters */
+  }
+  
